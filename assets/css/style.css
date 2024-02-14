@@ -201,6 +201,9 @@ h2 {
     font-size: 1.5rem;
     padding-block: 1.5rem;
   }
+  .shop img {
+    width: 22%;
+  }
 
   /* card */
 
@@ -223,18 +226,64 @@ h2 {
   .body-card-container span {
     font-size: 0.8rem;
   }
+
+  h1,
+  h2 {
+    text-align: left;
+  }
 }
 
 /* PC */
 
 @media screen and (min-width: 768px) {
+  .pc-version {
+    display: flex;
+    min-height: calc(100vh - 66px);
+    gap: 2rem;
+  }
+
+  header {
+    width: inherit;
+    margin: inherit;
+    border-radius: inherit;
+    width: 20%;
+  }
+
+  .container {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  ul li {
+    width: 100%;
+    padding-block: 2rem;
+    font-size: 1rem;
+  }
+  .shop {
+    width: 100%;
+    order: -1;
+  }
+
+  /* card */
+
+  main {
+    flex-grow: 1;
+  }
   .card-container {
-    width: 32%;
+    width: 31%;
+  }
+  .body-card-container {
+    gap: 2rem;
   }
 }
-@media screen and (min-width: 1200px) {
+
+@media screen and (min-width: 1400px) {
   .card-container {
-    width: 23%;
+    width: 22.5%;
   }
 }
 @media screen and (min-width: 1400px) {
