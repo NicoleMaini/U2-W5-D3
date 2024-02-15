@@ -164,7 +164,9 @@ h2 {
   margin-top: 2rem;
 }
 
-/* MEDIA QUERY */
+/* ----------------
+    MEDIA QUERY 
+-------------------*/
 
 /* Tablet */
 
@@ -227,6 +229,11 @@ h2 {
     font-size: 0.8rem;
   }
 
+  .card-container:nth-of-type(5),
+  .card-container:last-of-type {
+    display: none;
+  }
+
   h1,
   h2 {
     text-align: left;
@@ -241,6 +248,8 @@ h2 {
     min-height: calc(100vh - 66px);
     gap: 2rem;
   }
+
+  /* header */
 
   header {
     width: inherit;
@@ -274,17 +283,54 @@ h2 {
     flex-grow: 1;
   }
   .card-container {
-    width: 31%;
+    width: 45%;
   }
   .body-card-container {
     gap: 2rem;
   }
+
+  /* article */
+
+  .article-container {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 998px) {
+  /* card */
+
+  .card-container {
+    width: 29%;
+  }
+  .card-container:nth-of-type(5),
+  .card-container:last-of-type {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  /* article */
+
+  .article-container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .article-container img {
+    order: -1;
+    width: 30%;
+    object-fit: cover;
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 1400px) {
+  /* card */
+
   .card-container {
     width: 22.5%;
   }
-}
-@media screen and (min-width: 1400px) {
+  .card-container:nth-of-type(5),
+  .card-container:last-of-type {
+    display: none;
+  }
 }
